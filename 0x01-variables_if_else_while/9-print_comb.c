@@ -1,16 +1,19 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - prints all possible combinations of single-digit numbers
+ * main - Entry point
  * Return: Always 0 (success)
  */
 int main(void)
 {
-	int n;
-	for (n = 48; n <58; n++
+	int d;
 
-		--putchar(n);
-		if (n != 57)
+	for (d = '0'; d <= '9'; d++)
+	{
+		putchar(d);
+		if (d != '9')
 		{
 		putchar(',');
 		putchar(' ');
